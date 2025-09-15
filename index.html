@@ -3,206 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>我的个人介绍</title>
-    <style>
-        body {
-            font-family: 'Arial', sans-serif;
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-            background-color: #e6f2ff;
-            color: #333;
-        }
-        
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        
-        header {
-            background-color: #b3d9ff;
-            padding: 30px 0;
-            text-align: center;
-            border-radius: 10px;
-            margin-bottom: 30px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        h1 {
-            color: #0066cc;
-            margin: 0;
-        }
-        
-        .tagline {
-            color: #4d94ff;
-            font-style: italic;
-        }
-        
-        .profile-pic {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            border: 5px solid white;
-            margin: 20px auto;
-            display: block;
-            object-fit: cover;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        section {
-            background-color: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-        }
-        
-        h2 {
-            color: #0080ff;
-            border-bottom: 2px solid #b3d9ff;
-            padding-bottom: 10px;
-        }
-        
-        .skills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-        }
-        
-        .skill {
-            background-color: #cce6ff;
-            padding: 5px 15px;
-            border-radius: 20px;
-            font-size: 0.9em;
-        }
-        
-        footer {
-            text-align: center;
-            padding: 20px;
-            background-color: #b3d9ff;
-            border-radius: 10px;
-            margin-top: 30px;
-        }
-        
-        .social-links a {
-            color: #0066cc;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: bold;
-        }
-        
-        .social-links a:hover {
-            text-decoration: underline;
-        }
-
-        .tech-icons {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 20px;
-            margin-top: 20px;
-        }
-        
-        .tech-icon {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 15px;
-            background-color: white;
-            border-radius: 10px;
-            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .tech-icon:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-        }
-        
-        .tech-icon span {
-            margin-top: 10px;
-            font-weight: bold;
-            color: #0066cc;
-        }
-
-    </style>
+    <title>唐志明 | RoboMaster 视觉工程师</title>
+    
+    <!-- 引入 Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 引入外部 CSS 文件 -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <img src="./image/lena.png" alt="个人照片" class="profile-pic">
-            <h1>唐志明</h1>
-            <p class="tagline">大创项目队员</p>
-        </header>
-        
-        <section id="about">
-            <h2>关于我</h2>
-            <p>我是BandieraRosa</p>
-        </section>
-        
 
-        <section id="background">
-            <h2>关于这个网站</h2>
-            <h3>也许可以拿来当作我的个人页面？</h3>
-            <p>2025.5.11</p>
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="nav-logo"><span>T</span>ZM.</a>
+            <ul class="nav-links">
+                <li><a href="#about">关于</a></li>
+                <li><a href="#skills">技能</a></li>
+                <li><a href="#projects">项目</a></li>
+                <li><a href="#contact">联系</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header id="home">
+        <div class="container">
+            <div class="header-content">
+                <!-- 建议替换为你的真实照片 -->
+                <img src="./image/lena.png" alt="个人照片" class="profile-pic">
+                <h1>你好, 我是 <span>唐志明</span></h1>
+                <p class="tagline">RoboMaster 视觉组 - 算法工程师</p>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="container">
+                <h2>关于我</h2>
+                <p>
+                    我叫唐志明 (BandieraRosa)，一名对机器人与计算机视觉充满热情的开发者。作为校RoboMaster战队的视觉组成员，我专注于利用C++和Python进行目标检测、图像处理与运动预测算法的研发与实现，致力于让机器人在赛场上看得更准、反应更快。
+                </p>
+            </div>
         </section>
 
         <section id="skills">
-            <h2>已掌握（也许只是我觉得已掌握）的技能</h2>
-            <div class="tech-icons">
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/c" width="40" height="40" alt="C" />
-                    <span>C</span>
+            <div class="container">
+                <h2>技能栈</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>编程语言</h3>
+                        <div class="tech-icons">
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/c/white" width="28" height="28" alt="C" /><span>C</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/cplusplus/white" width="28" height="28" alt="C++" /><span>C++</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/python/white" width="28" height="28" alt="Python" /><span>Python</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/javascript/white" width="28" height="28" alt="JavaScript" /><span>JavaScript</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>框架与库</h3>
+                        <div class="tech-icons">
+                             <div class="tech-icon"><img src="https://cdn.simpleicons.org/opencv/white" width="28" height="28" alt="OpenCV" /><span>OpenCV</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/pytorch/white" width="28" height="28" alt="PyTorch" /><span>PyTorch</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/django/white" width="28" height="28" alt="Django" /><span>Django</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/html5/white" width="28" height="28" alt="HTML5" /><span>HTML5</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/css3/white" width="28" height="28" alt="CSS3" /><span>CSS3</span></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>工具与平台</h3>
+                        <div class="tech-icons">
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/ros/white" width="28" height="28" alt="ROS" /><span>ROS2</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/git/white" width="28" height="28" alt="Git" /><span>Git</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/docker/white" width="28" height="28" alt="Docker" /><span>Docker</span></div>
+                            <div class="tech-icon"><img src="https://cdn.simpleicons.org/linux/white" width="28" height="28" alt="Linux" /><span>Linux</span></div>
+                        </div>
+                    </div>
                 </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/cplusplus" width="40" height="40" alt="C++" />
-                    <span>C++</span>
-                </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/python" width="40" height="40" alt="Python" />
-                    <span>Python</span>
-                </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/django" width="40" height="40" alt="Django" />
-                    <span>Django</span>
-                </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/javascript" width="40" height="40" alt="JavaScript" />
-                    <span>JavaScript</span>
-                </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/css3" width="40" height="40" alt="CSS3" />
-                    <span>CSS</span>
-                </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/html5" width="40" height="40" alt="HTML5" />
-                    <span>HTML</span>
-                </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/opencv" width="40" height="40" alt="OpenCV" />
-                    <span>OpenCV</span>
-                </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/ros" width="40" height="40" alt="ROS2" />
-                    <span>ROS2</span>
-                </div>
-                <div class="tech-icon">
-                    <img src="https://cdn.simpleicons.org/pytorch" width="40" height="40" alt="PyTorch" />
-                    <span>Torch</span>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>项目经历</h2>
+                <div class="projects-grid">
+                    <!-- 项目1: 请在此处替换为你自己的项目 -->
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <h3>装甲板识别与追踪系统</h3>
+                            <p>基于OpenCV和深度学习模型，开发了一套高实时性的敌方机器人装甲板识别与追踪系统。通过卡尔曼滤波预测目标运动，显著提升了自瞄精度。</p>
+                            <div class="project-tags">
+                                <span class="tag">C++</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">ROS2</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 项目2: 请在此处替换为你自己的项目 -->
+                    <div class="project-card">
+                        <div class="project-card-content">
+                            <h3>能量机关预测与打击模型</h3>
+                            <p>通过分析能量机关的运动模式，使用LSTM神经网络构建预测模型。实现了对激活扇叶的精准预测，在能量机关激活时能稳定获取高额加成。</p>
+                             <div class="project-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">Scikit-learn</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 你可以在此添加更多项目 -->
                 </div>
             </div>
         </section>
         
-
-        <footer>
-            <div class="social-links">
-                <a href="https://github.com/BandieraRosa/">GitHub</a>
-                <a href="tencent://message/?uin=3132716198&Site=&Menu=yes"
-                    target="_blank" title="QQ好友">QQ:3132716198</a>
+        <section id="contact">
+            <div class="container">
+                <h2>联系我</h2>
+                <p>如果你对我的项目感兴趣，或是有任何合作意向，欢迎通过以下方式与我联系。</p>
+                <div class="social-links">
+                    <a href="https://github.com/BandieraRosa/" target="_blank">
+                        <img src="https://cdn.simpleicons.org/github/white" height="30" width="30" alt="GitHub"/>
+                        <span>GitHub</span>
+                    </a>
+                    <a href="tencent://message/?uin=3132716198&Site=&Menu=yes" target="_blank">
+                        <img src="https://cdn.simpleicons.org/tencentqq/white" height="30" width="30" alt="QQ"/>
+                        <span>QQ: 3132716198</span>
+                    </a>
+                </div>
             </div>
-            <p>© 2025 篱落. 保留所有权利。</p>
-        </footer>
-    </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>© 2025 篱落 (唐志明). 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <!-- 引入外部 JavaScript 文件 (defer 属性让脚本在 HTML 解析完毕后执行) -->
+    <script src="script.js" defer></script>
 </body>
 </html>
